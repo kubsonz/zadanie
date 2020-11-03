@@ -6,6 +6,20 @@
 				"corejs": 2,
 				"regenerator": true
 			}
+		],
+		[
+			"inline-svg",
+			{
+				"ignorePattern": "icons",
+				"disableNamespaceIds": true,
+				"svgo": {
+					"plugins": [
+						{
+							"removeDimensions": true
+						}
+					]
+				}
+			}
 		]
 	]
 }

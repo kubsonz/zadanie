@@ -1,0 +1,70 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__container {
+        svg {
+            display: none;
+
+            @media only screen and (min-width: 1200px) {
+                display: block;
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    }
+
+    &__button {
+        width: 230px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+
+        &--login {
+            background-color: #F49E4C;
+            border: none;
+            color: white;
+
+            &:hover {
+                background-color: #E06D00;
+            }
+        }
+
+        &--register {
+            background-color: transparent;
+            border: 2px solid #F49E4C;
+            color: #F49E4C;
+
+            &:hover {
+                background-color: #F49E4C;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__or {
+        color: #7D7C83;
+        margin: 18px 0;
+        line-height: 26px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+}

@@ -1,6 +1,7 @@
 @import 'card';
-
-$primary-color: slateblue;
+@import 'header';
+@import 'messages';
+@import 'technologies';
 
 * {
 	box-sizing: border-box;
@@ -9,32 +10,30 @@ $primary-color: slateblue;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	background: $primary-color;
-	color: #fff;
+	font-family: "Open Sans";
+	color: #000000;
 	line-height: 1.5;
-}
-
-ul {
-	list-style: none;
+	background-color: #E5E5E5;
 }
 
 .container {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 20px;
-	overflow: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 100vh;
+	padding: 12px;
+
+	@media only screen and (min-width: 1200px) {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 }
 
-header {
+.heading {
+    font-size: 30px;
+	font-weight: bold;
+	color: #000000;
+    line-height: 41px;
+	margin: 40px 0;
+	width: 100%;
 	text-align: center;
-	margin-bottom: 40px;
-	background: rgba(0, 0, 0, 0.3);
-	padding: 30px;
-	border-bottom: 5px #fff solid;
 }

@@ -1,12 +1,19 @@
+import welcomeSlider from '../assets/welcomeSlider.svg'
+
 const Header = () => {
-	const template = `
-    <header>
-      <h1>My Parcel App</h1>
-      <p>This is a boilerplate for a simple vanilla JS workflow using the Parcel bundler.</p>
-    </header>
+  const template = `
+    <div class="welcome__container">
+      ${welcomeSlider}
+      <div class="welcome">
+        <p class="heading">Dzień dobry</p>
+        <button class="welcome__button welcome__button--login">Zaloguj się</button>
+        <p class="welcome__or">lub</p>
+        <button class="welcome__button welcome__button--register">Zarejestruj</button>
+      </div>
+    </div>
   `;
 
-	return template;
+  return template;
 };
 
 export default Header;

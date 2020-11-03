@@ -1,0 +1,48 @@
+.technology {
+    width: 165px;
+    height: 181px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between
+    }
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-top: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            background: #000000;
+            height: 5px;
+            width: 25px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -200%)
+        }
+    }
+
+    & svg {
+        width: 75px;
+    }
+
+    &:hover > svg * {
+        fill: green;
+    }
+}
